@@ -64,5 +64,5 @@ set -e
 
 echo "== Assemble ==="
 getent ahosts $APP_ROUTE || echo "Unknown host"
-curl -s $APP_ROUTE | fgrep Hello
+curl -s $APP_ROUTE
 cat /etc/resolv.conf
